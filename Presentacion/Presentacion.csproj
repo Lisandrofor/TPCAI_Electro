@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,9 +44,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BajaProducto.cs" />
+    <Compile Include="BajaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BajaProducto.Designer.cs" />
-    <Compile Include="Cliente.cs" />
+    <Compile Include="Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Cliente.Designer.cs" />
     <Compile Include="GestionProveedores.cs" />
     <Compile Include="GestionProveedores.Designer.cs" />
@@ -53,17 +58,29 @@
     <Compile Include="GestionUsuarios.Designer.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="Login.Designer.cs" />
-    <Compile Include="LoginNuevo.cs" />
+    <Compile Include="LoginNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LoginNuevo.Designer.cs" />
-    <Compile Include="MenuAdministrador.cs" />
+    <Compile Include="MenuAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MenuAdministrador.Designer.cs" />
-    <Compile Include="MenuPrincipal.cs" />
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MenuPrincipal.Designer.cs" />
-    <Compile Include="MenuSupervisor.cs" />
+    <Compile Include="MenuSupervisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MenuSupervisor.Designer.cs" />
-    <Compile Include="MenuVendedor.cs" />
+    <Compile Include="MenuVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MenuVendedor.Designer.cs" />
-    <Compile Include="ModificarCliente.cs" />
+    <Compile Include="ModificarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ModificarCliente.Designer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,6 +100,20 @@
     <EmbeddedResource Include="MenuSupervisor.resx" />
     <EmbeddedResource Include="MenuVendedor.resx" />
     <EmbeddedResource Include="ModificarCliente.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccesoaDatos\AccesoaDatos.csproj">
+      <Project>{70f54231-32b0-4408-867c-f30479e9c094}</Project>
+      <Name>AccesoaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{277dd7af-70d0-40bd-a508-2289995244be}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{c254b3a0-af2b-46b6-967d-5e896fbaffac}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
