@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E1C3644-D967-49A9-AC4D-85383367552B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Presentacion</RootNamespace>
+    <AssemblyName>Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BajaProducto.cs" />
+    <Compile Include="BajaProducto.Designer.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Cliente.Designer.cs" />
+    <Compile Include="GestionProveedores.cs" />
+    <Compile Include="GestionProveedores.Designer.cs" />
+    <Compile Include="GestionUsuarios.cs" />
+    <Compile Include="GestionUsuarios.Designer.cs" />
+    <Compile Include="Login.cs" />
+    <Compile Include="Login.Designer.cs" />
+    <Compile Include="LoginNuevo.cs" />
+    <Compile Include="LoginNuevo.Designer.cs" />
+    <Compile Include="MenuAdministrador.cs" />
+    <Compile Include="MenuAdministrador.Designer.cs" />
+    <Compile Include="MenuPrincipal.cs" />
+    <Compile Include="MenuPrincipal.Designer.cs" />
+    <Compile Include="MenuSupervisor.cs" />
+    <Compile Include="MenuSupervisor.Designer.cs" />
+    <Compile Include="MenuVendedor.cs" />
+    <Compile Include="MenuVendedor.Designer.cs" />
+    <Compile Include="ModificarCliente.cs" />
+    <Compile Include="ModificarCliente.Designer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BajaProducto.resx" />
+    <EmbeddedResource Include="Cliente.resx" />
+    <EmbeddedResource Include="GestionProveedores.resx" />
+    <EmbeddedResource Include="GestionUsuarios.resx" />
+    <EmbeddedResource Include="Login.resx" />
+    <EmbeddedResource Include="LoginNuevo.resx" />
+    <EmbeddedResource Include="MenuAdministrador.resx" />
+    <EmbeddedResource Include="MenuPrincipal.resx" />
+    <EmbeddedResource Include="MenuSupervisor.resx" />
+    <EmbeddedResource Include="MenuVendedor.resx" />
+    <EmbeddedResource Include="ModificarCliente.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
